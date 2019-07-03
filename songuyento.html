@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiemtra so nguyen to</title>
+</head>
+<body>
+<script>
+   function isPrime(N) {
+      if(N<2){
+       return false;
+      }else if(N===2){
+         return true;
+      }
+      else if(N>2){
+        for(i=2; i<N-1; i++){
+           if(N%i===0){
+            return false;
+               break;
+            }
+        }
+      }
+      return true;
+
+   }
+function testPrime(){
+       let Nhapso = parseInt(prompt("Enter a number: "));
+       let result = isPrime(Nhapso);
+       alert(result);
+
+}
+testPrime();
+
+
+
+</script>
+</body>
+</html>
